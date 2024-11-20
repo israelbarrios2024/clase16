@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión No 16, Formulario de contacto, Imágenes</title>
+    <link rel="stylesheet" href="formas.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form>
+        <label>Nombre</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label>Correo electrónico</label>
+        <input type="email" id="email" name="email" required><br>
+        <label>Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="4" required></textarea><br>
+        <button type="submit">Enviar</button>
+        <!--submit envía los datos del formulario al servidor-->   
+    </form>
+
+    <h1>Mi Imagen</h1>
+    <img src="imagen.png" class="imagen">
+
+    <h1>Validar Formulario - Registro</h1>
+    <form onsubmit="return validar()">
+        <label>Nombre: </label>
+        <input type="text" id="nombres" name="nombres"><br>
+        <label>Edad: </label>
+        <input type="number" id="edad" name="edad"><br>
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <h1>Galería de Imágenes</h1>
+    <div class="galeria">
+        <img src="perro.png" onclick="mostrargrande(this.src)">
+        <img src="aguila.png" onclick="mostrargrande(this.src)">        
+        <img src="gusano.png" onclick="mostrargrande(this.src)">
+        <img src="mero.png" onclick="mostrargrande(this.src)">        
+        <img src="persona.png" onclick="mostrargrande(this.src)">        
+    </div>
+    
+    
+    <img id="grande" src="persona.png">  
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Subir Archivo de Imagen</h1>
+    <form>
+        <label>Selecciona una Imagen...</label>
+        <input type="file" id="archivo" name="archivo" accept="image/*"><br><br>
+        <button type="submit">Subir</button>
+    </form>
+
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

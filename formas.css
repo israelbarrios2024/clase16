@@ -1,0 +1,21 @@
+.imagen{
+    border: 5px solid #b2d613;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+/* cfreo un stilo para la galería */
+.galeria{
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#grande{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+}
